@@ -10,6 +10,16 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+CREATE TABLE tbl_dancer (
+	id INT(8) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255),
+    crew_name VARCHAR(255),
+    dance_level VARCHAR(50)
+);
+
+ */
+
 // 역할: 실제 데이터베이스에 댄서들을 CRUD
 // Model
 public class DancerJdbcRepo {
