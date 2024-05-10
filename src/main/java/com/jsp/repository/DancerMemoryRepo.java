@@ -26,7 +26,7 @@ public class DancerMemoryRepo {
     public boolean save(Dancer dancer) {
         if (dancer == null) return false;
         dancerList.add(dancer);
-        System.out.println(dancerList);
+//        System.out.println(dancerList);
         return true;
     }
 

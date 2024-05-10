@@ -1,6 +1,7 @@
 package com.jsp.chap04;
 
 import com.jsp.entity.Dancer;
+import com.jsp.repository.DancerJdbcRepo;
 import com.jsp.repository.DancerMemoryRepo;
 
 import javax.servlet.RequestDispatcher;
@@ -18,7 +19,8 @@ import java.util.List;
 @WebServlet("/chap04/new-dancer")
 public class AddNewDancerServlet extends HttpServlet {
 
-    private DancerMemoryRepo repo = DancerMemoryRepo.getInstance();
+//    private DancerMemoryRepo repo = DancerMemoryRepo.getInstance();
+    private DancerJdbcRepo repo = DancerJdbcRepo.getInstance();
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -53,8 +55,11 @@ public class AddNewDancerServlet extends HttpServlet {
         // 수송객체 (page, request, session, application)
         // request: 한번의 요청과 응답이 끝날동안만 보관
         // session: 브라우저가 꺼질때까지 or 세션시간이 만료될때까지 보관
-        req.setAttribute("name", name);
-        req.setAttribute("crew", crewName);
+//        req.setAttribute("name", name);
+//        req.setAttribute("crew", crewName);
+//        req.setAttribute("level", danceLevel);
+
+        req.setAttribute("d", dancer);
 
         // 적당한 HTML(JSP) 응답
         RequestDispatcher rd

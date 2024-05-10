@@ -1,6 +1,7 @@
 package com.jsp.chap04;
 
 import com.jsp.entity.Dancer;
+import com.jsp.repository.DancerJdbcRepo;
 import com.jsp.repository.DancerMemoryRepo;
 
 import javax.servlet.RequestDispatcher;
@@ -18,7 +19,8 @@ import java.util.List;
 @WebServlet("/chap04/show-list")
 public class ShowDancerListServlet extends HttpServlet {
 
-    private DancerMemoryRepo repo = DancerMemoryRepo.getInstance();
+//    private DancerMemoryRepo repo = DancerMemoryRepo.getInstance();
+    private DancerJdbcRepo repo = DancerJdbcRepo.getInstance();
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
