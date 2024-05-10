@@ -10,5 +10,6 @@
 
     <a href="/chap02/dancer/register">댄서 등록(서블릿버전)</a> <br>
     <a href="/chap03/dancer/register.jsp">댄서 등록(jsp버전)</a> <br>
+    <a href="/chap04/dancer/form">댄서 등록(mvc버전)</a> <br>
 </body>
 </html>
