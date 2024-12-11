@@ -11,8 +11,8 @@
     <!-- embedded tomcat 설정 -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <tomcat.version>9.0.39</tomcat.version>
     </properties>
 
@@ -59,11 +59,11 @@
         </dependency>
 
         <!--    database 관련 라이브러리    -->
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>3.3.3</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.mariadb.jdbc</groupId>-->
+<!--            <artifactId>mariadb-java-client</artifactId>-->
+<!--            <version>3.3.3</version>-->
+<!--        </dependency>-->
 
 
     </dependencies>

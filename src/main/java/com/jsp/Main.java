@@ -1,6 +1,5 @@
 package com.jsp;
 
-import com.jsp.chap01.BasicServlet;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
@@ -14,8 +13,6 @@ public class Main {
     public static void main(String[] args) throws LifecycleException {
 
 
-        //TIP 캐럿을 강조 표시된 텍스트에 놓고 <shortcut actionId="ShowIntentionActions"/>을(를) 누르면
-        // IntelliJ IDEA이(가) 수정을 제안하는 것을 확인할 수 있습니다.
         String webappDirLocation = "src/main/webapp/";
         Tomcat tomcat = new Tomcat();
 
